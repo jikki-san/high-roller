@@ -1,0 +1,37 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Optima, Candara, "Noto Sans", source-sans-pro, sans-serif;
+  font-weight: normal;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  > * {
+    margin: 10px;
+  }
+}
+
+.side-input {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+label {
+  font-size: 0.75rem;
+}
+
+#die {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
