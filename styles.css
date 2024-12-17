@@ -30,8 +30,55 @@ label {
   font-size: 0.75rem;
 }
 
+.roll-result {
+  display: none;
+}
+
 #die {
   width: 150px;
   height: 150px;
-  margin: 0 auto;
+  margin: 50px auto;
+}
+
+.roll-animation {
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  10% {
+    transform: translate(-5px, -5px) rotate(-10deg);
+  }
+  20% {
+    transform: translate(5px, 5px) rotate(10deg);
+  }
+  30% {
+    transform: translate(-7px, 5px) rotate(-8deg);
+  }
+  40% {
+    transform: translate(5px, -7px) rotate(8deg);
+  }
+  50% {
+    transform: translate(-5px, 5px) rotate(-10deg);
+  }
+  60% {
+    transform: translate(5px, -5px) rotate(10deg);
+  }
+  70% {
+    transform: translate(-3px, 3px) rotate(-5deg);
+  }
+  80% {
+    transform: translate(3px, -3px) rotate(5deg);
+  }
+  90% {
+    transform: translate(-2px, 2px) rotate(-3deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
 }

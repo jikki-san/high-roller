@@ -13,11 +13,17 @@
       <h1>Click to roll!</h1>
       <div class="side-input">
         <label for="numSides">How many sides on the die?</label>
-        <input type="number" name="numSides" width="150px" />
+        <input
+          type="number"
+          name="numSides"
+          id="numSides"
+          width="150px"
+          value="6"
+        />
       </div>
       <!-- TODO: add option to assign values to the outcomes -->
       <img id="die" src="public/die.svg" alt="click here to roll" />
-      <!-- TODO: add an output box -->
+      <h1 class="roll-result"></h1>
     </div>
   </body>
 </html>
